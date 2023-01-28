@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --color-primary: #383e44;
+  --color-variant: #566573;
+  --color-white: #fff;
+  --transition: all 1s ease-out;
+}
+
+.top_header {
+  padding: 1rem;
+  position: relative;
+}
+.current_time {
+  position: absolute;
+  color: var(--color-white);
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem 1rem 1rem 3rem;
+}
+.current_time h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.current_time h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.form_group input,
+input#task_time {
+  height: 3rem;
+  border: 0px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  width: 20%;
+}
+input#task_title {
+  padding-left: 0.6rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button#btn_primary {
+  height: 3rem;
+  width: 5.5rem;
+  padding: 0.3rem;
+  border: none;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clock {
+  background: var(--color-primary);
+  color: var(--color-white);
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+}

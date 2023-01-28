@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top_header">
+        <div class="current_time">
+          <h1>09:15 AM</h1>
+          <h4>24th Jan</h4>
+        </div>
+        <div class="form_group">
+          <input type="text" id="task_title" placeholder="Enter Task" />
+          <input
+            type="datetime-local"
+            id="task_time"
+            placeholder="Enter Task"
+          />
+          <button type="submit" id="btn_primary">Add Task</button>
+        </div>
+      </div>
+      <div class="timer">
+        <div class="clock">
+          <h1>2.00</h1>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
